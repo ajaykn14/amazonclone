@@ -239,3 +239,72 @@ ul a{
   
 
 }
+
+
+
+/**respomsive**/
+/* Add this CSS at the end of your existing styles.css file */
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+    .navlogo {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-adress,
+    .nav-search,
+    .nav-signin,
+    .nav-return,
+    .nav-cart {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .panel {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-section {
+        height: 200px; /* Adjust as needed */
+    }
+    .hero-msg {
+        font-size: 0.7rem;
+    }
+    .shop-section {
+        flex-direction: column;
+    }
+    .box {
+        width: 90%;
+    }
+    footer {
+        margin-top: 20px;
+    }
+}
+
+/* Additional adjustments for even smaller screens, like smartphones */
+@media only screen and (max-width: 480px) {
+    .hero-msg {
+        font-size: 0.6rem;
+    }
+    .box {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .foot-panel2 {
+        flex-direction: column;
+    }
+    .foot-panel3 {
+        height: auto;
+    }
+    .copy-right {
+        padding-top: 10px;
+    }
+    .foot-panel4 {
+        height: auto;
+        padding-top: 15px;
+    }
+}
